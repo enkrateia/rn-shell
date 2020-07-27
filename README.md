@@ -54,4 +54,11 @@ to run the iOS emulator.
 
 You will see the iOS emulator running Vue application inside a **WebView**.
 
+**To stop the containers run**
+
+	docker-compose stop
+**To remove all the containers from your system run**
+
+	docker system prune -a -f
+
 **This project is still in development.**
