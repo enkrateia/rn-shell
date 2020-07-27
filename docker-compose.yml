@@ -2,16 +2,20 @@ version: '3.8'
 
 services:
   node:
-    image: gove0310/todo-node:1.1
+    image: gove0310/todo-node:1.2
     ports:
       - '8082:8082'
+    depends_on:
+      - db
 
   db:
-    image: mongo
+    image: gove0310/todo-mongodb:1.2
     ports:
       - '27017:27017'
 
   vue:
-    image: gove0310/todo-vue:1.1
+    image: gove0310/todo-vue:1.2
     ports:
       - '8080:8080'
+    depends_on:
+      - node
