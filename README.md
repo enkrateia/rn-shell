@@ -19,13 +19,13 @@ If you are a macOS or Windows user **Docker Compose** is already packaged:
 > On desktop systems like **Docker Desktop for Mac and Windows**, Docker
 > Compose is **included** as part of those desktop installs.
 
-In other cases visit [these](https://docs.docker.com/compose/install/).
+In other cases visit [this](https://docs.docker.com/compose/install/).
 
 It is important to have these ports free: **8080, 8082, 27017** the containers will use those ports to communicate.
 
 Once you have **Docker**  and **Docker Compose** you should run in the terminal at the root of this repository  (where the **docker-compose.yml** file is).
 
-	docker-compose -up -d
+	docker-compose up -d
 
 After **Docker** downloads and runs all the containers, you will see:
 
